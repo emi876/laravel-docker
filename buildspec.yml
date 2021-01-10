@@ -29,7 +29,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - echo Thank you for your time
+      - echo my name is whim
       - docker image ls -a
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - printf '[{"name":"laravel-docker-aws-container", "imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json

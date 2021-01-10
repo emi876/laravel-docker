@@ -31,5 +31,5 @@ phases:
       - docker image ls -a
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - printf '[{"name":"laravel-docker-aws-container"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
-  artifacts:
+artifacts:
     files: imagedefinitions.json 

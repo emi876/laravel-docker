@@ -6,6 +6,7 @@ phases:
       php: 7.3
   pre_build: # commands to be run before build
     commands:
+    - echo Begin the pipeline
     - echo Logging in to Amazon ECR....
     - aws --version
     # login to Elastic container registry
